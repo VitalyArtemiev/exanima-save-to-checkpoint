@@ -1,3 +1,5 @@
+Set-Location $env:APPDATA\Exanima
+
 $latestrsg= Get-ChildItem -Attributes !Directory *.rsg | Sort-Object -Descending -Property LastWriteTime | select -First 1
 
 if ($latestrsg -eq $null) {
