@@ -17,7 +17,6 @@ while (Test-Path -Path $backupname) {
 }
 if (Test-Path -Path $goalrcpname) {
 	echo "Renaming $goalrcpname to $backupname"
-
 	Rename-Item $goalrcpname $backupname
 }
 
